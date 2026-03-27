@@ -1,0 +1,16 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         updateCheck="false"
+         monitoring="autodetect"
+         dynamicConfig="true">
+
+    <!-- Required default cache -->
+    <defaultCache
+            maxEntriesLocalHeap="1000"
+            eternal="false"
+            timeToIdleSeconds="120"
+            timeToLiveSeconds="300"
+            statistics="true"
+            memoryStoreEvictionPolicy="LRU"/>
+
+</ehcache>
